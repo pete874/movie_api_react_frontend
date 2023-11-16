@@ -28,6 +28,10 @@ function App() {
     getMovies();
   },[])
 
+  useEffect(() => {
+    document.title = 'Movie Api Test Project';
+  }, []);
+
   return (
     <div className="App">
       <Header/>
